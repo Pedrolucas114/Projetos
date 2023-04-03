@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animação com CSS</title>
+  <style>
+    input:invalid{
+      animation: shake .2s ease-in-out 0s 2;
+      border: solid 2px #dc2626;
+    }
+
+    @keyframes shake {
+      0%{transform: translateX(0rem)}
+      25%{transform: translateX(-0.5rem)}
+      75%{transform: translateX(0.5rem)}
+      100%{transform: translateX(0rem)}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <label>Username</label>
+    <input type="text" pattern="[a-zA-Z]*" placeholder="Username" />
+  </div>
+  
+</body>
+</html>

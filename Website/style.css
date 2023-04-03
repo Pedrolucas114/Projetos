@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+body {
+  background: #12181B;
+}
+
+a {
+  color:white;
+  text-decoration: none;
+}
+
+nav {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3A3A37;
+
+    height: 110px;
+}
+
+nav ul {
+    font-size:30px;
+    list-style: none;
+    display:flex;
+    align-items: baseline;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+  
+
+
+
