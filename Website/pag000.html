@@ -4,56 +4,59 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WebSite</title>
+  <link rel="stylesheet" href="style.css">
+  <title>Entrar/Cadastrar</title>
   <style>
-    body {
-      background: #12181B;
-    }
+  .flex0
+  {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5164ed;
+    padding: 30px;
+    height: 50px;
+  }  
 
-    .flex {
-      display: flex;
-    }
-
-    .box1 {
-      display:flex;
-      justify-content: center;
-      align-items: center;
-
-      height: 180px;
-      background-color:#5164ed;
-    }
-
-    
-  </style>
+  main, label {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .email {
+    margin:30px 0 10px 0;
+    padding: 30px 30px 0 30px;
+  }
+  .senha{
+    padding: 30px 30px 0 30px;
+  }
+  button {
+    margin:30px 0 10px 0;
+    padding: 5px 30px 0 30px;
+    background-color: #5164ed;
+    color: white;
+  }
+</style>
 </head>
 <body>
-  <header class="flex">
+  <header class="flex0">
     <div class="box1">
     <img src="Imagens/Logo/logo.png" alt="logo">
-    </div>
-    <nav>
-      <ul>
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="pag001.html">Blog</a>
-        </li>
-        <li>
-          <a href="https://betteranime.net/minha-conta" target="_blank" rel="external">Assistir</a>
-        </li>
-        <li>
-            <a href="https://github.com/Pedrolucas114" target="_blank" rel="external">Sobre</a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/pedropereirahtml/" target="_blank" rel="external">Contato</a>
-        </li>  
-      </ul>
-    </nav>
-
-
-
   </header>
-  
+
+  <main class="menu">
+    <label>
+      <input type="email" placeholder="seu e-mail" class="email">
+    </label>
+    <label>
+      <input type="password" placeholder="sua senha" class="senha">
+    </label>
+    <label>
+    <a href="index.html"><button>Login</button></a>
+    </label>
+  </main>
 </body>
 </html>
