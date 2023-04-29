@@ -21,24 +21,48 @@
     display: flex;
     flex-direction: column;
   }
+  .email,.senha::placeholder {
+  text-align: center;
+}
   .menu{
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .email {
-    margin:30px 0 10px 0;
+    margin:50px 0 10px 0;
     padding: 30px 30px 0 30px;
+    border-radius: 16px;
   }
   .senha{
     padding: 30px 30px 0 30px;
+    border-radius: 16px;
+  }
+  .fundo{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px;
+    padding: 0px 30px 0px 30px;
+    background-color: rgb(81, 106, 203);
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15)
   }
   button {
-    margin:30px 0 10px 0;
-    padding: 5px 30px 0 30px;
-    background-color: #5164ed;
     color: white;
+    margin: 30px;
+    width: 150PX;
+    height: 35PX;
+    border-radius: 16px;
+    background-color: #1368CA;
+    cursor: pointer;
+    transition: all 0.3s;
   }
+  button:hover {
+    background-color: #51A0FC;
+
+  }
+
 </style>
 </head>
 <body>
@@ -48,6 +72,7 @@
   </header>
 
   <main class="menu">
+    <div class="fundo">
     <label>
       <input type="email" placeholder="seu e-mail" class="email">
     </label>
@@ -55,8 +80,9 @@
       <input type="password" placeholder="sua senha" class="senha">
     </label>
     <label>
-    <a href="index.html"><button>Login</button></a>
+    <a href="index.html"><button>LOGIN</button></a>
     </label>
+  </div>
   </main>
 </body>
 </html>
