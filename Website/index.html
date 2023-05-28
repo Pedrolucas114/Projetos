@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anime Way</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <style>
     /*.container {
         display:flex;
@@ -16,13 +16,21 @@
         background-color:#5164ed;
     }
     */
+
+    div.tanjiro{
+      background-image: url('css/img/backgroundimage2.jpg');
+      height: 560px;
+      background-position: center center;
+      padding: 100px;
+      filter: brightness(55%);
+    }
    
     </style>
 </head>
 <body>
 <header class="flex">
   <div class="container">
-    <img src="Imagens/Logo/logo.png" alt="logo">
+    <img src="css/img/Logo/logo.png" alt="logo">
   </div>
     <nav>
       <ul>
@@ -30,13 +38,13 @@
           <a href="index.html">Home</a>
         </li>
         <li>
-          <a href="pag001.html">Mangás</a>
+          <a href="pag001.html">Blog</a>
         </li>
         <li>
           <a href="https://betteranime.net/minha-conta" target="_blank" rel="external">Assistir</a>
         </li>
         <li>
-            <a href="https://github.com/Pedrolucas114" target="_blank" rel="next">Contato</a>
+            <a href="https://www.linkedin.com/in/pedropereirahtml/" target="_blank" rel="next">Contato</a>
         </li>
         <li>
           <a href="pag000.html" class="btn btn-laranja">Entrar/Cadastrar</a>
@@ -45,7 +53,27 @@
     </nav>
   </header> 
   <main>
-
+    <div class="tanjiro">
+      
+    </div>
   </main>
+  <footer class="container">
+    <!--Rodapé com as redes sociais-->
+    <!--Não usa nav, pois é uma navegação externa-->
+    <ul class="row">
+      <li><a href="https://instagram.com/pedroluckss?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" rel="external">
+        <img src="css/img/Logo/logo-insta.png" alt="Instagram">
+      </a>
+      </li>
+      <li><a href="#" target="_blank" rel="external">
+        <img src="css/img/Logo/logo-twitter.png" alt="Twitter">
+      </a>
+      </li>
+      <li><a href="https://www.facebook.com/profile.php?id=100004274767930" target="_blank" rel="external">
+        <img src="css/img/Logo/logo-facebook.png" alt="Facebook">
+      </a>
+      </li>
+    </ul>
+  </footer>
 </body>
 </html>
